@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.home-page, .product-detail-page, .login-page, .contact-page, .about-page, .weather-widget {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f9f9f9; /* İçeriğin beyaz bir arka planı olsun */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+.weather-widget {
+    padding: 15px;
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.weather-widget h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .nav-links {
+    margin-bottom: 10px;
+  }
+  .nav-links a {
+    margin-right: 15px;
+  }
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links a {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .product-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .product-card {
+    width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* Başlıklar için koyu bir renk */
+}
+  h1 {
+    font-size: 1.8em;
+  }
+  .login-page form div, .contact-page form div {
+    margin-bottom: 10px;
+  }
+  .login-page label, .contact-page label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .login-page input, .contact-page input, .contact-page textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+  }
+  /* Mevcut CSS kodlarınıza ekleyin */
+
+.weather-widget {
+  padding: 15px;
+  margin: 20px auto; /* Ortalamak için */
+  max-width: 400px; /* Genişliğini sınırlamak için */
+  background-color: #e0f7fa; /* Açık mavi arka plan */
+  border: 1px solid #b2ebf2; /* Mavi kenarlık */
+  border-radius: 8px; /* Köşeleri yuvarlar */
+  color: #00796b; /* Koyu yeşilimsi yazı rengi */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-widget h3 {
+  margin-top: 0;
+  color: #004d40; /* Başlık için daha koyu renk */
+}
+
+.weather-widget p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.weather-widget img {
+  vertical-align: middle; /* İkonu metinle hizalamak için */
+}
+
+.weather-widget.error {
+    background-color: #ffebee; /* Hata durumunda kırmızımsı arka plan */
+    border-color: #ffcdd2; /* Kırmızımsı kenarlık */
+    color: #c62828; /* Koyu kırmızı yazı */
+}
+}

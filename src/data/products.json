@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "name": "Lacivert Ceket",
+    "price": 1200,
+    "description": "Şıklığı ve konforu bir arada sunan bu modern ceket, casual ve yarı resmi kombinleriniz için ideal. Esnek yapısıyla gün boyu rahatlık sağlar.",
+    "imageUrl": "/src/assets/images/urun_1.jpg" 
+  },
+  {
+    "id": "2",
+    "name": "Mavi Ceket",
+    "price": 800,
+    "description": "Tarzınızı tamamlayacak bu slim fit ceket, hafif kumaşı sayesinde mevsim geçişlerinde vazgeçilmeziniz olacak. Hem işte hem de özel davetlerde kullanıma uygun.",
+    "imageUrl": "/src/assets/images/urun_2.jpg" 
+  },
+  {
+    "id": "3",
+    "name": "Siyah Kumaş Pantalon",
+    "price": 150,
+    "description": "Klasik şıklığın vazgeçilmezi. Her ortama uyum sağlayan, rahat kesimli siyah kumaş pantolon ile tarzınızı tamamlayın.",
+    "imageUrl": "/src/assets/images/urun_3.jpg" 
+  },
+  {
+    "id": "4",
+    "name": "Bej Kumaş Pantalon",
+    "price": 250,
+    "description": "Modern ve ferah bir görünüm için ideal. Esnek yapısıyla gün boyu konfor sunan bej kumaş pantolon ile kombinlerinize yeni bir soluk katın.",
+    "imageUrl": "/src/assets/images/urun_4.jpg" 
+  }
+
+]
